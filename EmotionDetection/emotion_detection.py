@@ -13,6 +13,7 @@ def emotion_detector(text_to_analyze):
 
     max_key = max(extract_response, key=extract_response.get)
 
-    extract_response['dominant_emotion'] = extract_response[max_key]
+    extract_response['dominant_emotion'] = max_key
+    # extract_response['dominant_emotion'] = extract_response[max_key]
     
     return extract_response
